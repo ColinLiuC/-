@@ -1,9 +1,0 @@
-D:\Projects\RR2018-007\CoreSolution\CoreSolution.Tools\bin\Release\netstandard2.0\CoreSolution.Tools.deps.json
-D:\Projects\RR2018-007\CoreSolution\CoreSolution.Tools\bin\Release\netstandard2.0\CoreSolution.Tools.dll
-D:\Projects\RR2018-007\CoreSolution\CoreSolution.Tools\bin\Release\netstandard2.0\CoreSolution.Tools.pdb
-D:\Projects\RR2018-007\CoreSolution\CoreSolution.Tools\obj\Release\netstandard2.0\CoreSolution.Tools.csproj.CoreCompileInputs.cache
-D:\Projects\RR2018-007\CoreSolution\CoreSolution.Tools\obj\Release\netstandard2.0\CoreSolution.Tools.AssemblyInfoInputs.cache
-D:\Projects\RR2018-007\CoreSolution\CoreSolution.Tools\obj\Release\netstandard2.0\CoreSolution.Tools.AssemblyInfo.cs
-D:\Projects\RR2018-007\CoreSolution\CoreSolution.Tools\obj\Release\netstandard2.0\CoreSolution.Tools.dll
-D:\Projects\RR2018-007\CoreSolution\CoreSolution.Tools\obj\Release\netstandard2.0\CoreSolution.Tools.pdb
-D:\Projects\RR2018-007\CoreSolution\CoreSolution.Tools\obj\Release\netstandard2.0\CoreSolution.Tools.csprojAssemblyReference.cache
