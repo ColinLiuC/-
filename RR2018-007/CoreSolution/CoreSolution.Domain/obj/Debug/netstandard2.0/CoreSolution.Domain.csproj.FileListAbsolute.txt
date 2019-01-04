@@ -1,0 +1,12 @@
+D:\Projects\RR2018-007\CoreSolution\CoreSolution.Domain\bin\Debug\netstandard2.0\CoreSolution.Domain.deps.json
+D:\Projects\RR2018-007\CoreSolution\CoreSolution.Domain\bin\Debug\netstandard2.0\CoreSolution.Domain.dll
+D:\Projects\RR2018-007\CoreSolution\CoreSolution.Domain\bin\Debug\netstandard2.0\CoreSolution.Domain.pdb
+D:\Projects\RR2018-007\CoreSolution\CoreSolution.Domain\bin\Debug\netstandard2.0\CoreSolution.Tools.dll
+D:\Projects\RR2018-007\CoreSolution\CoreSolution.Domain\bin\Debug\netstandard2.0\CoreSolution.Tools.pdb
+D:\Projects\RR2018-007\CoreSolution\CoreSolution.Domain\obj\Debug\netstandard2.0\CoreSolution.Domain.csproj.CoreCompileInputs.cache
+D:\Projects\RR2018-007\CoreSolution\CoreSolution.Domain\obj\Debug\netstandard2.0\CoreSolution.Domain.AssemblyInfoInputs.cache
+D:\Projects\RR2018-007\CoreSolution\CoreSolution.Domain\obj\Debug\netstandard2.0\CoreSolution.Domain.AssemblyInfo.cs
+D:\Projects\RR2018-007\CoreSolution\CoreSolution.Domain\obj\Debug\netstandard2.0\CoreSolution.Domain.dll
+D:\Projects\RR2018-007\CoreSolution\CoreSolution.Domain\obj\Debug\netstandard2.0\CoreSolution.Domain.pdb
+D:\Projects\RR2018-007\CoreSolution\CoreSolution.Domain\obj\Debug\netstandard2.0\CoreSolution.Domain.csprojAssemblyReference.cache
+D:\Projects\RR2018-007\CoreSolution\CoreSolution.Domain\obj\Debug\netstandard2.0\CoreSolution.Domain.csproj.CopyComplete

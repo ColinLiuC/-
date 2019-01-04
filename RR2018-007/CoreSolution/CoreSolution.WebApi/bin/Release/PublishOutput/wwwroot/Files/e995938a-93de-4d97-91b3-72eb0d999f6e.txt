@@ -1,0 +1,272 @@
+1.涉及到两个表的显示
+2.错误提示码
+3.异步交互
+4.根节点隐藏删除，修改按钮
+5.out 类型变量：不用初始化 
+6.超出内容显示省略号
+  display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+7.分页显示
+
+8.js刷新当前页面 window.location.reload();
+   
+9.获取select选中的值
+
+var usertype = $("select[name=userType] option:selected").val();
+var usertype = $("select[name=userType]").find("option:selected").val();
+ 
+初始化select
+$("select[name=userType]").val('@userAccount.UserType');
+
+
+10.获取ridio选中的值
+   var userstatus = $("input:radio[name=shifoujinyong]:checked").val();
+
+  初始化ridio
+ $("input:radio[name=shifoujinyong][value='@userAccount.UserStatus']").prop('checked', true);
+
+
+11.获取复选框的值
+
+var StationIds=$("input:checkbox[name='StationIds']:checked").map(function(index,elem) {
+            return $(elem).val();
+        }).get().join(',');
+      
+
+
+初始化复选框（checkbox）
+ foreach (var privilege in UpdateSelectPrivileges)
+  {
+    $("input[name=updateprivileges]").each(function (){
+     if ($(this).val() === '<%=privilege%>') 
+     {
+     $(this).prop("checked", true);
+      }
+      })
+   }
+
+       //初始化复选框（输出字段）
+            var outputdisplayfields = '<%=interfacedetail.Output_Display_Fields%>';
+            var arr = outputdisplayfields.split(',');
+
+            for (var i = 0; i < arr.length; i++) {
+                $("input[name=updateoutputdisplayfields]").each(function () {
+                    if ($(this).val() == arr[i]) {
+                        $(this).prop("checked", true);
+                    }
+                });
+            }
+
+判断复选框是否被选中
+if ($(this).prop("checked")) {
+              ...
+            }
+
+12.把一个表里面数据导入到另一个表
+insert into [XinshiyiDB].[dbo].[CMS_MetaData]
+  (
+	ChannelID,
+	Title,
+	
+	
+	LastModifiedDate
+  )
+  select   
+	143,
+	[名称],	
+	
+	GETDATE()
+from  [XinshiyiDB].[dbo].['4100$']
+
+
+13.延迟跳转页面
+ setTimeout(function () {
+    location.href ="../Default/Index";
+   }, 2000);
+
+14.显示和关闭模态框
+     $("#myModal").modal("hide");
+     $("#myModal1").modal("show");
+
+15.根据URL带的参数打开指定模态框
+
+if (window.location.search.indexOf("type=register") >= 0) {
+            $("#myModal1").modal("show");
+        } else if (window.location.search.indexOf("type=zixun") >= 0) {
+            $("#myModal").modal("show");
+        }
+
+16.定位到指定位置
+if (window.location.search.indexOf("top=200") >= 0) {
+    var temp = $("#dingwei").offset().top;
+    $("body").animate({ scrollTop: temp }, 500);
+   }
+
+17.设置成手型
+    cursor:pointer
+   去除轮廓线条
+    outline：none
+
+17.设置背景图片
+    html body {
+            background: url(images/beijing.png) no-repeat;
+            width: 100%;
+            height: 100%;
+            background-size: 100% 100%;
+        }
+
+
+18.动态获取浏览器尺寸     
+   function resizeBodyBg() {
+            var width = $("body").width();
+            var height = $("body").height();
+            $("body").css("background-size", width + "px" + " " + height + "px");
+        }
+        window.onresize = resizeBodyBg;
+        resizeBodyBg();
+
+19.检测body里面是否存在 preload
+$("body").hasClass("preload")==false
+
+20.页面重定向
+ Response.Redirect("defaults.aspx")
+
+21.格式化时间
+@string.Format("{0:yyyy/M/d}", presentation.Shipment)
+
+
+22. 获得当前日期
+    function show() {
+        var mydate = new Date();
+        var str = "" + mydate.getFullYear() + "-";
+        str += (mydate.getMonth() + 1) + "-";
+        str += mydate.getDate();
+        return str;
+    }
+
+23.判断某个选择器里面是否含有某个类样式
+ if ($(".top").hasClass("xianshi") == true)
+{
+}
+
+24.Div超出一定高度显示滚动条
+   max-hieght：600
+   overflow-y: auto
+
+25.屏幕发生变化
+    window.onresize = function(){
+     
+    }
+
+26.去除末尾的“，”
+    arr = arr.substr(0, arr.length - 1);
+
+27.//页面发生滚动执行的事件
+        var ad;
+        $(window).scroll(function () {
+            clearTimeout(ad);
+            $(".menu_open").fadeOut("slow");
+            ad = setTimeout(function () { $(".menu_open").fadeIn("slow"); }, 3000);
+        });
+28.设置小于12px字体
+ -webkit-transform: scale(0.9);
+
+
+29.窗口尺寸发生变化事件
+ $(window).resize(function () {
+        //process here
+    });
+
+30.
+   $(".gjc").removeAttr("href");
+   $(".search_input").removeAttr("onclick");
+   $(".search_input").off("click");
+
+
+启动SQL Server
+NET START MSSQLSERVER
+
+停止SQL Server
+NET STOP MSSQLSERVER
+
+34.后台发起http请求并返回数据
+
+           HttpWebRequest request = WebRequest.CreateHttp(url);
+            request.Method = WebRequestMethods.Http.Get;
+            HttpWebResponse resp = (HttpWebResponse)request.GetResponse();
+            Stream stream = resp.GetResponseStream();
+            //获取响应内容  
+            if (stream != null)
+                using (StreamReader reader = new StreamReader(stream, Encoding.UTF8))
+                {
+                    result = reader.ReadToEnd();
+                }
+            return result;
+
+
+36.$("#aid").parents(".mydiv")  只返回节点包含样式mydiv 的 上层节点集合。
+           //正整数
+            function isInteger(p) {
+                return regEX = /^[0-9]*[1-9][0-9]*$/.test(trim(p));
+            }
+          //删除左右两端的空格
+            function trim(str) { 
+                return str.replace(/(^\s*)|(\s*$)/g, "");
+            }
+
+
+37.鼠标移除目标区域隐藏目标区域
+ $(document).click(function (e) {
+                var _con = $('.menu-body,#show-pinpai');   // 设置目标区域
+                if (!_con.is(e.target) && _con.has(e.target).length === 0) {
+                    $('#pinpai').hide();
+                    $("#pinpai").removeClass("fadeInDown").addClass("fadeOutDown");
+                }
+                else {
+                    $("#pinpai").removeClass("fadeOutDown").addClass("fadeInDown");
+                }
+            });
+
+
+        $("#show-pinpai").click(function () {
+            if ($("#pinpai").hasClass("fadeOutDown")) {
+                $("#pinpai").show();
+                $("#pinpai").removeClass("fadeOutDown").addClass("fadeInDown");
+            }
+        });
+
+38. $("div").data("greeting", "Hello World");
+      $("#btnclose").attr("data-orderid", orderid);
+
+39.边框阴影
+    box-shadow: 0px 0px 8px #999;
+
+
+40，查找某个区域下的指定元素
+         var aa = $(this).parent().parent().parent().children().find(".orderid");
+                $(aa).each(function () {
+                    orderids += $(this).text() + ",";
+                });
+
+http://mpv.videocc.net/93f2c79b56/e/93f2c79b56b45251ef21e3e4bc307fee_3.mp4
+
+41.正在加载动画
+<div data-loader="circle-side"></div>
+<i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+
+42. function queryString(name) {
+        var reg = new RegExp("[&|?]" + name + "=([^&$]*)", "gi");
+        var a = reg.test(location.search);
+        return decodeURIComponent(a ? RegExp.$1 : "");
+    }
+
+43.web存储
+
+sessionStorage.setItem('ResidentWorkName',$("#ResidentWorkName").text());
+ResidentWorkName=sessionStorage.getItem('ResidentWorkName');
+
+44.  using (FileStream stream = new FileStream(filePath, FileMode.Append))
+            using (StreamWriter writer = new StreamWriter(stream))
+            {
+                writer.WriteLine(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + ":服务启动！");
+            }
+

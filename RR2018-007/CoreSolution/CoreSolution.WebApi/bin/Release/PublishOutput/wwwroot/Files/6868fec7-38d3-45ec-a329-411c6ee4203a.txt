@@ -1,0 +1,10 @@
+1.string类型数据
+@Html.EditorFor(m => m.PropertyTel)
+
+2.double类型数据，int
+@Html.Editor("TotalPrice", "String4Bootstrap")
+
+3.枚举、select
+@Html.Editor("StreetId", "Enum4Bootstrap", new { selectList = DropdownListHelper.GetStreetList(ViewBag.StreetId != null ? ViewBag.StreetId.ToString() : ViewBag.Street) })
+
+

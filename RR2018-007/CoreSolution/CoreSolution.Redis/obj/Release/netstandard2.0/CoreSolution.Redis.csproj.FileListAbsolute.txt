@@ -1,0 +1,9 @@
+D:\Projects\RR2018-007\CoreSolution\CoreSolution.Redis\bin\Release\netstandard2.0\CoreSolution.Redis.deps.json
+D:\Projects\RR2018-007\CoreSolution\CoreSolution.Redis\bin\Release\netstandard2.0\CoreSolution.Redis.dll
+D:\Projects\RR2018-007\CoreSolution\CoreSolution.Redis\bin\Release\netstandard2.0\CoreSolution.Redis.pdb
+D:\Projects\RR2018-007\CoreSolution\CoreSolution.Redis\obj\Release\netstandard2.0\CoreSolution.Redis.csproj.CoreCompileInputs.cache
+D:\Projects\RR2018-007\CoreSolution\CoreSolution.Redis\obj\Release\netstandard2.0\CoreSolution.Redis.AssemblyInfoInputs.cache
+D:\Projects\RR2018-007\CoreSolution\CoreSolution.Redis\obj\Release\netstandard2.0\CoreSolution.Redis.AssemblyInfo.cs
+D:\Projects\RR2018-007\CoreSolution\CoreSolution.Redis\obj\Release\netstandard2.0\CoreSolution.Redis.dll
+D:\Projects\RR2018-007\CoreSolution\CoreSolution.Redis\obj\Release\netstandard2.0\CoreSolution.Redis.pdb
+D:\Projects\RR2018-007\CoreSolution\CoreSolution.Redis\obj\Release\netstandard2.0\CoreSolution.Redis.csprojAssemblyReference.cache
